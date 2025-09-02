@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t java-test .'
+                    bat 'docker build -t java-test .'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh 'docker run --rm java-test'
+                    bat 'docker run --rm java-test'
                 }
             }
         }
