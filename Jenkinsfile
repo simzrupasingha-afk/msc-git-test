@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    bat 'docker build -t java-test .'
+                    sh 'docker build -t java-test .'
                 }
             }
         }
