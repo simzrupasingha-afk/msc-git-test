@@ -2,7 +2,7 @@
 FROM openjdk:17-slim
 
 # Set working directory
-WORKDIR /app
+WORKDIR /app .
 
 # Copy Java file into container
 COPY test.java .
